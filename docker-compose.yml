@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  python:
+    build:
+      context: .docker
+      dockerfile: python/Dockerfile
+    volumes:
+      - ./:/usr/project
+    working_dir: /usr/project
